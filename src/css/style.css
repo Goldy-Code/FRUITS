@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*! ========== CONTAINER ========== */
+
+.container {
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+}
+
+#range {
+  appearance: none;
+  height: 7px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background: #a15ca1;
+  background-size: 0%;
+  background-repeat: no-repeat;
+
+  width: 250px;
+}
+#range::-webkit-slider-runnable-track {
+  /* Изменения */
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+#range::-webkit-slider-thumb {
+  /* Изменения */
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #a15ca1;
+  cursor: pointer;
+  box-shadow: 0 0 2px 0 #555;
+  transition: 0.3s ease-in-out;
+}
+
+.out {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/*! ========== CONTAINER END ========== */
+
+.parent {
+  width: 100%;
+  padding: 25px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.child {
+  position: relative;
+
+  width: 170px;
+  height: 275px;
+
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.name {
+  position: absolute;
+  top: 0px;
+
+  font-size: 18px;
+
+  text-align: center;
+  width: 100%;
+  padding: 5px;
+
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.price {
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+
+  width: 100%;
+  font-size: 18px;
+  padding: 5px;
+
+  background: rgba(0, 0, 0, 0.4);
+
+  color: #fff;
+}
+
+.none {
+  display: none;
+}
